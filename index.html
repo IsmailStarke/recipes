@@ -6,13 +6,23 @@
         <title>Starke's Kitchen</title>
         <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+
+        <!--Background Image-->
+        <style>
+            body {
+              background-image: url('images/background.jpg');
+              background-repeat: no-repeat;
+              background-attachment: fixed;  
+              background-size: cover;
+            }
+            </style>
     </head>
     <body>
         <!--Logo-->
         <img src="images/logo.png" alt="logo" width="60%" height="20%" class="mx-auto d-block">
 
         <!--NavBar-->
-        <ul class="nav nav-pills">
+        <ul class="nav nav-pills bg-white d-flex" width="60%" height="20%">
             <li class="nav-item">
               <a class="nav-link active" href="#">Home</a>
             </li>
@@ -33,7 +43,7 @@
             </li>
         </ul>
         
-        <!--Jumbotrons-->
+        <!-- Breakfast Jumbotron -->
         <div class="mt-4 p-5 bg-light text-dark" width="70%" height="60%">
             <div class="row">
                 <div class="col-lg-5 col-md-5 col-sm-5">
@@ -114,5 +124,95 @@
                 </div>
             </div>
         </div>
+        <br/>
+        <br/>
+        <br/>
+        <br/>
+        <br/>
+        <br/>
+
+
+        <!-- Lunch Jumbotron -->
+        <div class="mt-4 p-5 bg-light text-dark" width="70%" height="60%">
+            <div class="row">
+                <div class="col-lg-5 col-md-5 col-sm-5">
+                    <img src="images/mac-and-cheese.jpg" alt="lunch-and-supper" width="70%" height="85%">
+                </div>
+                <div class="col-lg-7 col-md-7 col-sm-7">
+                    <h3>Lunch & Supper</h3>
+                    <p>
+                        What to eat? What to cook? Where the hell's my recipe book!? The stress of needing to cook is 
+                        exhausting in itself. But with Chef Starke's easy-to-guide recipe website, you can simply scroll 
+                        through and find what you're craving.<br />
+                        We have curries, we have cheesy pasta, we have Indian food, European Food, Asian Food, anything your 
+                        heart desires! All you need to do is click 
+                        <a href="lunchAndSupper.html">here</a>.
+                    </p>
+
+                     <!--carousel-->
+                     <div id="carousel-lunch" class="carousel slide" data-bs-ride="carousel">
+                        <!-- Indicators/dots -->
+                        <div class="carousel-indicators">
+                            <button type="button" data-bs-target="#carousel-lunch" data-bs-slide-to="0" class="active"></button>
+                            <button type="button" data-bs-target="#carousel-lunch" data-bs-slide-to="1"></button>
+                            <button type="button" data-bs-target="#carousel-lunch" data-bs-slide-to="2"></button>
+                            <button type="button" data-bs-target="#carousel-lunch" data-bs-slide-to="3"></button>
+                            <button type="button" data-bs-target="#carousel-lunch" data-bs-slide-to="4"></button>
+                            <button type="button" data-bs-target="#carousel-lunch" data-bs-slide-to="5"></button>
+                            <button type="button" data-bs-target="#carousel-lunch" data-bs-slide-to="6"></button>
+                        </div>
+
+                        <!--Slideshow-->
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <div class="d-flex justify-content-center">
+                                    <img src="images/lunchesAndSupper/butter-chicken.jpg" alt="butter-chicken">
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="d-flex justify-content-center">
+                                    <img src="images/lunchesAndSupper/chicken-curry.jpg" alt="chicken-curry">
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="d-flex justify-content-center">
+                                    <img src="images/lunchesAndSupper/cottage-pie.jpg" alt="cottage-pie">
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="d-flex justify-content-center">
+                                    <img src="images/lunchesAndSupper/lasagna.jpg" alt="lasagna">
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="d-flex justify-content-center">
+                                    <img src="images/lunchesAndSupper/lentil-breedie.jpg" alt="lentil-breedie">
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="d-flex justify-content-center">
+                                    <img src="images/lunchesAndSupper/spagehetti.jpg" alt="spagehetti">
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="d-flex justify-content-center">
+                                    <img src="images/lunchesAndSupper/sausage-food.jpg" alt="sausage-food">
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Left and right controls/icons -->
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carousel-lunch" data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon"></span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carousel-lunch" data-bs-slide="next">
+                            <span class="carousel-control-next-icon"></span>
+                        </button>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
     </body>
 </html>
